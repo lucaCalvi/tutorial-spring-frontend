@@ -1,0 +1,24 @@
+<div class="container col-md-6 componente">
+    <div class="card componente">
+        <div class="card-header">
+            <h3>Agregar Libros</h3>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="form">
+                <div class="form-group">
+                    <label for="titulo">Título: </label>
+                    <input type="text" name="titulo" class="form-control" formControlName="titulo" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género: </label>
+                    <input type="text" name="genero" class="form-control" formControlName="genero" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción: </label>
+                    <input type="text" name="descripcion" class="form-control" formControlName="descripcion" autocomplete="off">
+                </div>
+                <button class="btn btn-danger" (click)="guardar(form)">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
